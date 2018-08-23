@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+			//변하는것이 가능한 변수
+			//값을 담는 컨테이너로 값을 유지할 필요가 있을때 사용
+			var a = 1;
+			alert(a+1);
+			var b = 'tt';
+			alert(b);
+
+			var obj1 = { val: 10 };
+			//해쉬 타입 ??
+			function add4(obj, b) {
+			  obj.val += b; 
+			}
+			console.log( obj1.val );
+			add4(obj1, 20);
+			console.log( obj1.val );
+
+			//변수에다가 함수를 넣어서 리턴 값을 받는다. ㄷㄷ
+			//class 로 생각 해야 하나  
+			//var 는  ref 로 항상 들어 같다고 생각 행야 할듯
+
+			var f1 = function(a) { return a * a; };
+			console.log(f1);//f1 을 읽어 오는대 실행됨 
+		</script>
+	</body>
+</html>
