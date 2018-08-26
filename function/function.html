@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+			//코드의 재 사용성 재사용성!!!
+			//유지보수가 용이 하다  메인터넌스 
+			//가독성 
+			//하나의 부품 많은 살마들이 사용가능 
+			//수정하기 쉬운 프로그램을 만들어라!!!
+			// 프로그래밍 통해서 수학 공부 해야해  ㅠㅠ   영어공부도 해야해 ㅠㅠ
+
+			var a = "";
+			function numbering(){
+				
+				for(var i = 0; i < 1000; i++)
+					a = a + i+"<br>";
+				return a;
+			};
+
+			function  get_argument(arg){
+				return arg*1000;
+			};
+
+			function  get_argument(arg1, arg2){
+				return arg1 + arg2;
+			};
+			//함수 이름이 똑같은게 있으면 먼서 사용된 것만 사용할수 있다. 
+			alert(get_argument(1));
+			alert(get_argument(10,20));
+			
+
+			document.write(numbering());
+			var obj = new Object();
+			obj.name = 'ykp';
+			document.write(obj.name+"<hr>");
+			obj.age = 23;
+			document.write(obj.age+"<hr>");
+			//신기 방기
+
+
+			var user = 'ykp';
+			document.write(user+"<hr>");
+			user.age = 23;
+			document.write(user.age+'<hr>');
+		</script>
+	</body>
+</html>

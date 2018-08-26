@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			function get_members(){
+				return ['egoing','k8805','sorialgi'];
+			}
+
+			members = get_members();
+			document.write(members[0]+"<br>");
+			
+
+			function tt(){
+			
+				for (var i = 0; i < members.length; i++){
+					members[i] = members[i].toUpperCase();
+					
+				}
+			
+				return members;
+			}
+
+			document . write (tt()+"<br>");
+
+			var li = ['a','b','c','d','e'];
+			document.write(li+" <br>");
+			li.push('f');
+			document.write(li+" : push<br>");
+
+
+			li = li.concat(['g','h']);
+			document.write(li+" : concat<br>");
+
+			li.unshift('z');
+			document.write(li+" : unshift<br>");
+
+			li.splice(2, 0, 'B');
+			document.write(li+' : splice<br>');
+
+			li.shift();
+			document.write(li+' : shift<br>');
+
+			li.pop();
+			document.write(li+' : pop<br>');
+
+			li.sort();
+			document.write(li+' : sort<br>');
+
+			li.reverse();
+			document.write(li+' : reverse<br>')
+
+
+		</script>
+	</body>
+</html>

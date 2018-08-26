@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var grades = {
+				'list' : {'egoiong':10,'k8805':8,'sorialgi': 80},
+				'show' : function(){
+					alert('hello world');
+					return 'Hello world';
+				},
+				'too' : function(){
+					for(var name in this.list){
+						console.log(name, this.list[name]);
+					}
+				}
+			}
+			document.write(grades.list.egoiong);
+			//document.write(grades.show());
+			grades['show']();
+			grades['too']();
+
+
+			/*for( var name in grades.list){
+				console.log(name, grades.list[name]);
+			};*/
+
+		</script>
+	</body>
+</html>
